@@ -15,6 +15,7 @@
     - Model Comparison: Evaluate performance using Mean Squared Error (MSE) on training and test sets.
 ---
 - Algorithm
+  - sklearn.neighbors.KNeighborsRegressor, sklearn.linear_model.LinearRegression  
   - Linear Regression:
     - Univariate models (one predictor at a time).
     - Multivariate models (all predictors together).
