@@ -1,1 +1,35 @@
+# Decision Tree & Regression Optimization 
 
+- Task goal:
+  - Task1: (Classification) Develop decision trees and optimize with pruning for medical diagnosis
+  - Task2: Regression models for predictive analysis.
+---
+- Data:
+  - task1 (decision tree): using multivariate Categorical & Integer data to predict health condition
+    -  Data example format: '35,9 no no yes yes yes yes no'
+    -  Independent variables: Temperature of patient(float), Occurrence of nausea (binary/boolean), Lumbar pain(binary/boolean), continuous need for urination(binary/boolean), Micturition pains(binary/boolean), Burning of urethra(binary/boolean), itch(binary/boolean), swelling of urethra outlet(binary/boolean)
+    -  Dependent variables: Inflammation of urinary bladder(binary/boolean), Nephritis of renal pelvis origin(binary/boolean)
+  -  task2 (Regression optimization): the dataset involve variables about the community, such as the percent of the population considered 
+urban, and the median family income
+    - Number of Attributes: 128
+    - Attribute Characteristics: Real
+    - Number of Instances: 1994
+--- 
+-  Methodology:
+  - task1 (tree):
+    - Train and visualize a Decision Tree.
+    - Extract IF-THEN rules.
+    - Apply cost-complexity pruning for interpretability.
+  - task2 (regression optimization):
+    - Linear Regression (Least Squares)
+    - Ridge Regression (L2 Regularization, tuned λ)
+    - LASSO Regression (L1 Regularization, feature selection)
+    - Principal Component Regression (PCR) (Optimal components via CV)
+    - Boosting (XGBoost) (L1-penalized gradient boosting, tuned α)
+---
+-  Model framework used:
+    - sklearn.tree.DecisionTreeClassifier
+    - sklearn.linear_model.RidgeCV
+    - sklearn.linear_model.LassoCV
+    - sklearn.decomposition.PCA
+    - xgboost.xgb
