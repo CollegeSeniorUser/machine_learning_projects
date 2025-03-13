@@ -1,5 +1,5 @@
 
-# Combined Cycle Power Plant Prediction
+# Combined Cycle Power Plant Prediction (Linear/Polynomial Regression)
 - Task goal: to predict the net hourly electrical energy output (EP) of a Combined Cycle Power Plant (CCPP) using multiple ambient environmental factors.
 ---
 - Dataset: the dataset contains 6 years (2006-2011) of power plant data. It includes hourly average readings of four independent variables (predictors):
