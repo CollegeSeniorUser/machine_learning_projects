@@ -1,1 +1,26 @@
 
+# Combined Cycle Power Plant Prediction
+- Task goal: to predict the net hourly electrical energy output (EP) of a Combined Cycle Power Plant (CCPP) using multiple ambient environmental factors.
+---
+- Dataset: the dataset contains 6 years (2006-2011) of power plant data. It includes hourly average readings of four independent variables (predictors):
+  - Independent varaibles: Temperature (T), Ambient Pressure (AP), Relative Humidity (RH), Exhaust Vacuum (V) (float/int)
+  - Dependent variable: net hourly electrical energy output (EP). (Float/Int)
+---
+-  Methodology
+    - Exploratory Data Analysis: Analyze the dataset, create pairwise scatterplots, and compute summary statistics
+    - Simple Linear Regression: Fit a separate regression model for each predictor to check individual impact on EP.
+    - Multiple Linear Regression: Fit a model using all predictors together and analyze statistical significance.
+    - Nonlinearity and Interaction Analysis: check for nonlinear relationships by fitting polynomial regression models.
+    - Test interaction terms between predictors to improve the model.
+    - Model Comparison: Evaluate performance using Mean Squared Error (MSE) on training and test sets.
+---
+- Algorithm
+  - Linear Regression:
+    - Univariate models (one predictor at a time).
+    - Multivariate models (all predictors together).
+  - Polynomial Regression:
+    - Adding quadratic and cubic terms to capture nonlinearity.
+    - K-Nearest Neighbors (KNN) Regression:
+    - Implement KNN with normalized and raw features.
+    - Tune k (neighbors) from 1 to 100 and find the optimal value.
+    - Compare results with Linear Regression using test errors.
